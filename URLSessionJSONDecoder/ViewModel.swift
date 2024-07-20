@@ -24,7 +24,10 @@ struct PokemonResponseDataModel: Decodable{
     }
 }
 
-final class ViewModel {
+final class ViewModel: ObservableObject {
+    
+    @Published var pokemons: [PokemoDataModel] = []
+    
     func getPokemons(){
         let url = URL(string: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151")
         
@@ -38,6 +41,9 @@ final class ViewModel {
                httpResponse.statusCode == 200 {
                 let pokemonDataModel = try! JSONDecoder().decode(PokemonResponseDataModel.self, from: data)
                 print("Pokemon \(pokemonDataModel)")
+                DispatchQueue.main.async{
+                    self.pokemons = pokemonDataModel.pokemons
+                }
             }
             
         }.resume()
