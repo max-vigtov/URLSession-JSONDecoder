@@ -11,6 +11,7 @@
 		E10BEC532C4B38F4008A927D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10BEC522C4B38F4008A927D /* ContentView.swift */; };
 		E10BEC552C4B38F5008A927D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10BEC542C4B38F5008A927D /* Assets.xcassets */; };
 		E10BEC582C4B38F5008A927D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10BEC572C4B38F5008A927D /* Preview Assets.xcassets */; };
+		E10BEC5F2C4B39BA008A927D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10BEC5E2C4B39BA008A927D /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E10BEC522C4B38F4008A927D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E10BEC542C4B38F5008A927D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E10BEC572C4B38F5008A927D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E10BEC5E2C4B39BA008A927D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,9 @@
 			children = (
 				E10BEC502C4B38F4008A927D /* URLSessionJSONDecoderApp.swift */,
 				E10BEC522C4B38F4008A927D /* ContentView.swift */,
-				E10BEC542C4B38F5008A927D /* Assets.xcassets */,
+				E10BEC5E2C4B39BA008A927D /* ViewModel.swift */,
 				E10BEC562C4B38F5008A927D /* Preview Content */,
+				E10BEC542C4B38F5008A927D /* Assets.xcassets */,
 			);
 			path = URLSessionJSONDecoder;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E10BEC532C4B38F4008A927D /* ContentView.swift in Sources */,
+				E10BEC5F2C4B39BA008A927D /* ViewModel.swift in Sources */,
 				E10BEC512C4B38F4008A927D /* URLSessionJSONDecoderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
